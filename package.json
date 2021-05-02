@@ -13,6 +13,6 @@
     "api:catalog": "dotnet watch --project ./src/Catalog/Chinook.Catalog.Api run",
     "api:operations": "dotnet watch --project ./src/Operations/Chinook.Operations.Api run",
     "api:sales": "dotnet watch --project ./src/Sales/Chinook.Sales.Api run",
-    "start": "npx concurrently \"npm run catalog\" \"npm run operations\" \"npm run sales\""
+    "start": "npx concurrently \"npm run api:catalog\" \"npm run api:operations\" \"npm run api:sales\""
   }
 }
